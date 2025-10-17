@@ -83,8 +83,8 @@ Acceptance criteria / user stories:
 - Sistem melindungi endpoint admin (role-based auth).
 
 Contoh response (availability):
+```sh
 GET /schedules/123/availability
-~
 {
  "scheduleId": 123,
  "totalSeats": 40,
@@ -95,7 +95,7 @@ GET /schedules/123/availability
    ...
  ]
 }
-~
+```
 
 Security:
 - JWT for auth, role-based middleware for /reports and admin routes.
